@@ -6,4 +6,9 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+
+router.get('/jsonp', function(req, res, next) {
+  res.render('jsonp', { title: 'Jsonp example' });
+});
+
 module.exports = router;
